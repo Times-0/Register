@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Timeline Register/Sign Up">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Signup | Timeline</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/user.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Timeline signup">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <meta name="msapplication-TileImage" content="images/user.jpg">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="images/user.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900
+        }
+        
+        #demo-drawer {
+            overflow: hidden;
+        }
+        
+        #demo-drawer:hover {
+            overflow-y: auto;
+        }
+    </style>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4551959209089511",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57990863-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-57990863-2');
+    </script>
+</head>
+
+<body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+            <div class="mdl-layout__header-row"> <span class="mdl-layout-title">Timeline - Signup</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search"> <i class="material-icons">search</i> </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search">
+                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                    </div>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn"> <i class="material-icons">more_vert</i> </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+                    <li class="mdl-menu__item">About</li>
+                    <li class="mdl-menu__item">Contact</li>
+                </ul>
+                <div class="mdl-tooltip mdl-tooltip--large" for="hdrbtn"> Quick Help</div>
+            </div>
+        </header>
+        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+            <header class="demo-drawer-header"> <img src="images/user.jpg" class="demo-avatar">
+                <div class="demo-avatar-dropdown"> <span>Guest, Welcome</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">arrow_drop_down</i> <span class="visuallyhidden">Accounts</span> </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                        <li class="mdl-menu__item"><i class="material-icons">add</i>Accounts (coming soon)</li>
+                    </ul>
+                    <div class="mdl-tooltip mdl-tooltip--large" for="accbtn"> Account Manager</div>
+                </div>
+            </header>
+            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800"> <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Register</a> <a class="mdl-navigation__link" href="https://www.paypal.me/valid22" target="_blank"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">attach_money</i>Donate</a> <a class="mdl-navigation__link" target="_blank" href="https://github.com/Times-0/Timeline"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Timeline</a>
+                <div class="mdl-layout-spacer"></div>
+                <div style="max-height: 200px;">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Timeline home box -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4551959209089511" data-ad-slot="1633147462" data-ad-format="rectangle,horizontal"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <a class="mdl-navigation__link" href="javascript:void(alert('I would <3 to help! Find me on discord: valid22#8138'));"></a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="mdl-grid demo-content">
+                <div id="register" class="mdl-grid demo-content mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Login Credentials</h2></div>
+                            <div class="mdl-card__supporting-text">
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="text" id="username" minlength="4" maxlength="12" pattern="[a-zA-Z0-9s]+" />
+                                        <label class="mdl-textfield__label" for="username">Username</label>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="password" id="userpass" />
+                                        <label class="mdl-textfield__label" for="userpass">Password</label>
+                                    </div>
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="showpassd">
+                                        <input type="checkbox" id="showpassd" class="mdl-checkbox__input"> <span class="mdl-checkbox__label">Show Password</span> </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-desktop mdl-cell--hide-tablet">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Advertisement</h2></div>
+                            <div class="mdl-card__supporting-text">
+
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                <!-- Timeline home box -->
+                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4551959209089511" data-ad-slot="1633147462" data-ad-format="auto"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Authentication Details</h2></div>
+                            <div class="mdl-card__supporting-text">
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="email" id="useremail" />
+                                        <label class="mdl-textfield__label" for="useremail">Email Address</label>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="number" id="userpin" min="1000" max="9999" disabled="" />
+                                        <label class="mdl-textfield__label" for="userpin">"Pin" is an upcoming security feature.</label>
+                                    </div>
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="hidepin">
+                                        <input type="checkbox" id="hidepin" class="mdl-checkbox__input"> <span class="mdl-checkbox__label">Hide Pin</span> </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Penguin Details</h2></div>
+                            <div class="mdl-card__supporting-text">
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="text" id="usernick" minlength="4" maxlength="12" pattern="[a-zA-Z0-9s]+" />
+                                        <label class="mdl-textfield__label" for="usernick">Nickname</label>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <select class="mdl-select__input" id="usercolor" name="professsion" required>
+                                            <option value="0" disabled selected>Color</option>
+                                            <option value="1">Blue</option>
+                                            <option value="2">Green</option>
+                                            <option value="3">Pink</option>
+                                            <option value="4">Black</option>
+                                            <option value="5">Red</option>
+                                            <option value="6">Orange</option>
+                                            <option value="7">Yellow</option>
+                                            <option value="8">Dark Purple</option>
+                                            <option value="9">Brown</option>
+                                            <option value="10">Peach</option>
+                                            <option value="11">Dark Green</option>
+                                            <option value="12">Light Blue</option>
+                                            <option value="13">Lime Green</option>
+                                            <option value="15">Aqua</option>
+                                            <option value="16">Arctic White</option>
+                                        </select>
+                                    </div>
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="ismember">
+                                        <input type="checkbox" id="ismember" class="mdl-checkbox__input"> <span class="mdl-checkbox__label">I want to be a member</span> </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Human Verification</h2></div>
+                            <div class="mdl-card__supporting-text">
+                                <button class="g-recaptcha" data-sitekey="6Leo6UYUAAAAAMpnc-w3_aDDOBTYasuTNYx_vY4b" data-callback="onRecaptcha" data-size="invisible" data-badge="inline" style="display: none;"> </button>
+                            </div>
+                            <div style="">
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                <!-- Timeline home box -->
+                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4551959209089511" data-ad-slot="1633147462" data-ad-format="auto"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-desktop mdl-cell--hide-phone">
+                        <div class="mdl-card mdl-shadow--6dp mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Advertisement</h2></div>
+                            <div class="mdl-card__supporting-text">
+
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                <!-- Timeline home box -->
+                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4551959209089511" data-ad-slot="1633147462" data-ad-format="auto"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Terms and Policies</h2></div>
+                            <div class="mdl-card__supporting-text">
+                                <div style="max-height: 100px; overflow: auto;">
+                                    <p>This register is meant for CPPS, powered by Timeline. This register is created by Dote AKA Valid22, feel free to contact me fore any issues or related problems.</p>
+                                    <p>You acknowledge you won't flood me with issues, but, wait for me to reply instead.</p>
+                                </div>
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="userterms">
+                                    <input type="checkbox" id="userterms" class="mdl-checkbox__input" required="1"> <span class="mdl-checkbox__label">I acknowledge and adhere the above terms and policies.</span> </label>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                                <h2 class="mdl-card__title-text">Complete Your Registration</h2></div>
+                            <div class="mdl-card__supporting-text"> <a href="javascript:0;" id="signupsubmit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">Click here to Register / Signup</a></div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop" id="errors" style="display: none;">
+                        <div class="mdl-card mdl-shadow--6dp" style="width: 100% !important;">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white" style="background: rgb(244, 67, 54) !important;">
+                                <h2 class="mdl-card__title-text">Error</h2></div>
+                            <div class="mdl-card__supporting-text">
+                                <p><b>Please correct the following errors and try again!</b></p>
+                                <ul class="demo-list-three mdl-list" id='error-list'></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="success" style="display: none;">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
+                        <div class="mdl-card mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--primary mdl-color-text--white" style="background: rgb(76, 175, 80) !important;">
+                                <h2 class="mdl-card__title-text">Successfully Registered!</h2></div>
+                            <div class="mdl-card__supporting-text">
+                                <p id="success-text">Your account has been successfully registered! Have fun!</p>
+                                <br> <a href="play.html" id="signupsubmit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">Play now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar" style="background: rgb(244, 67, 54) !important;">
+                    <div class="mdl-snackbar__text">Registration Failed :-(. Please correct the errors and try again!</div>
+                    <a href="#errors">
+                        <button class="mdl-snackbar__action" type="button" style="color: white;">View Errors</button>
+                    </a>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col ">
+                    <div class="mdl-card mdl-shadow--6dp mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                            <h2 class="mdl-card__title-text">Advertisement</h2></div>
+                        <div class="mdl-card__supporting-text">
+
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- Timeline home box -->
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4551959209089511" data-ad-slot="1633147462" data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <center style="z-index:10;">
+            <div>
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop" style="z-index: 10; display: none;" id="ovloader">
+                    <div id="p2loader" class="mdl-progress mdl-js-progress mdl-progress__indeterminate is-upgraded" data-upgraded=",MaterialProgress">
+                        <div class="progressbar bar bar1" style="width: 0%;"></div>
+                        <div class="bufferbar bar bar2" style="width: 100%;"></div>
+                        <div class="auxbar bar bar3" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <div id="overlay-loader" class="mdl-layout__obfuscator is-visible" style="display: none;"></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+            <mask id="piemask" maskContentUnits="objectBoundingBox">
+                <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
+                <circle cx=0.5 cy=0.5 r=0.40 fill="black" /> </mask>
+            <g id="piechart">
+                <circle cx=0.5 cy=0.5 r=0.5 />
+                <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" /> </g>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+            <mask id="piemask2" maskContentUnits="objectBoundingBox">
+                <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
+                <circle cx=0.5 cy=0.5 r=0.40 fill="black" /> </mask>
+            <g id="piechart2">
+                <circle cx=0.5 cy=0.5 r=0.5 />
+                <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" /> </g>
+        </defs>
+    </svg>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+            <g id="chart">
+                <g id="Gridlines">
+                    <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3" />
+                    <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7" />
+                    <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3" />
+                    <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7" />
+                    <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3" /> </g>
+                <g id="Numbers">
+                    <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500</text>
+                    <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
+                    <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300</text>
+                    <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
+                    <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100</text>
+                    <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1</text>
+                    <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2</text>
+                    <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">3</text>
+                    <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">4</text>
+                    <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5</text>
+                    <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">6</text>
+                    <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">7</text>
+                </g>
+                <g id="Layer_5">
+                    <polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5 294.5,80.5 380,165.2 437,75.5 469.5,223.3    " /> </g>
+                <g id="Layer_4">
+                    <polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7 296.7,128 380.7,184.3 436.7,125    " /> </g>
+            </g>
+        </defs>
+    </svg>
+    <script src="js/material.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>
