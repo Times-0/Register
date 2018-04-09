@@ -1,8 +1,6 @@
 # Register
 Register/Signup tool for Timeline Emulator. Server back-end by Python.
 
-**Anyone except _Zaseth_ can use this source**
-
 # Usage
 ```
 python TimelineSignup.py
