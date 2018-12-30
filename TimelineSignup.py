@@ -22,6 +22,12 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+if not MYSQL_DB.endswith("line"):
+    print "Unsupported database. Timeline v >= 7, forces convention for database name to end with `line`, which is the new db structure introduced from v7. "
+    print "Bye, exiting. Fix'em :~("
+    
+    os._exit(1)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://{}:{}@localhost/{}'.format(MYSQL_USER, MYSQL_PASS, MYSQL_DB)
 database = SQLAlchemy(app)
 
@@ -247,13 +253,17 @@ def signup(data):
 		membership = '{} 00:00:00'.format((datetime.date.today() + datetime.timedelta(member * 6*365/12)).isoformat())
 		password = md5(password).hexdigest()
 		userpin = encodePin(userpin)
-		signup = engine.execute("INSERT INTO `penguins` (`username`, `password`, `nickname`, `email`, `coins`, `igloos`, `furnitures`, `floors`, `locations`, `care`, `stamps`, `cover`, `color`, `membership`, `inventory`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", \
-			username, password, username, email, 5000, '', '', '', '', '', '', '', color, membership, '{}%1600'.format(color)
+		signup = engine.execute("INSERT INTO `penguins` (`username`, `password`, `nickname`, `email`) VALUES (%s, %s, %s, %s)", \
+			username, password, username, email
 		)
 
 		penguin_id = signup.lastrowid
 		authKey = os.urandom(24).encode('hex')
 		engine.execute("UPDATE `penguins` SET `hash` = %s, `Nickname` = %s WHERE `ID` = %s", '{};{}'.format(authKey, nickname), 'P{}'.format(penguin_id), penguin_id)
+		engine.execute("INSERT INTO `avatars` VALUES (NULL, %s, 0, 0, 0, 0, 0, 0, 0, 0, 0, %s, 1)", penguin_id, color)
+		engine.execute("INSERT INTO `inventories` VALUES (NULL, %s, %s, NULL, 'Added on Signup'), (NULL, %s, 1600, NULL, 'Added on Signup')", penguin_id, color, penguin_id)
+		engine.execute("INSERT INTO `coins` VALUES (NULL, %s, 5000, 'Registration bonus +5000', NULL)", penguin_id)
+		engine.execute("INSERT INTO `memberships` VALUES (NULL, %s, CURRENT_TIMESTAMP, %s, 'Redeemed during registration')", penguin_id, membership)
 
 		sendWelcomeAuth(username, nickname, authKey, email)
 
