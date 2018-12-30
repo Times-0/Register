@@ -253,8 +253,12 @@ def signup(data):
 		membership = '{} 00:00:00'.format((datetime.date.today() + datetime.timedelta(member * 6*365/12)).isoformat())
 		password = md5(password).hexdigest()
 		userpin = encodePin(userpin)
-		signup = engine.execute("INSERT INTO `penguins` (`username`, `password`, `nickname`, `email`) VALUES (%s, %s, %s, %s)", \
-			username, password, username, email
+		
+		import uuid
+		swid = "{" + str(uuid.uuid4()) + "}"
+		
+		signup = engine.execute("INSERT INTO `penguins` (`username`, `password`, `nickname`, `email`, `swid`) VALUES (%s, %s, %s, %s, %s)", \
+			username, password, username, email, swid
 		)
 
 		penguin_id = signup.lastrowid
