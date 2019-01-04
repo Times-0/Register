@@ -263,7 +263,7 @@ def signup(data):
 
 		penguin_id = signup.lastrowid
 		authKey = os.urandom(24).encode('hex')
-		engine.execute("UPDATE `penguins` SET `hash` = %s, `Nickname` = %s WHERE `ID` = %s", '{};{}'.format(authKey, nickname), 'P{}'.format(penguin_id), penguin_id)
+		engine.execute("UPDATE `penguins` SET `hash` = %s, `Nickname` = %s WHERE `ID` = %s", '{};{}'.format(authKey, nickname), 'P%04d'%(penguin_id), penguin_id)
 		engine.execute("INSERT INTO `avatars` VALUES (NULL, %s, 0, 0, 0, 0, 0, 0, 0, 0, 0, %s, 1)", penguin_id, color)
 		engine.execute("INSERT INTO `inventories` VALUES (NULL, %s, %s, NULL, 'Added on Signup'), (NULL, %s, 1600, NULL, 'Added on Signup')", penguin_id, color, penguin_id)
 		engine.execute("INSERT INTO `coins` VALUES (NULL, %s, 5000, 'Registration bonus +5000', NULL)", penguin_id)
