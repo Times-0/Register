@@ -223,7 +223,7 @@ def signup(data):
 			error_list.append({'title': 'Secret Pin', 'ref': 'userpin', 'msg':'Security Pin should be a 4 digit number.'})
 
 		if not 5 <= len(password) <= 20:
-			error_list.append({'title': 'Password', 'ref': 'userpass', 'msg':'Password should be a minimum of 4 characters and a maximum of 20.'})
+			error_list.append({'title': 'Password', 'ref': 'userpass', 'msg':'Password should be a minimum of 5 characters and a maximum of 20.'})
 
 		if not color in COLORS:
 			error_list.append({'title': 'Color', 'ref': 'usercolor', 'msg':'Please choose a valid color.'})
